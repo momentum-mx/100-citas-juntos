@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
@@ -23,16 +23,28 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        cream: "hsl(var(--cream))",
-        "warm-white": "hsl(var(--warm-white))",
-        blush: "hsl(var(--blush))",
         burgundy: {
           DEFAULT: "hsl(var(--burgundy))",
           light: "hsl(var(--burgundy-light))",
+          dark: "hsl(var(--burgundy-dark))",
         },
-        champagne: "hsl(var(--champagne))",
-        charcoal: "hsl(var(--charcoal))",
-        "soft-brown": "hsl(var(--soft-brown))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        blush: {
+          DEFAULT: "hsl(var(--blush))",
+          dark: "hsl(var(--blush-dark))",
+        },
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          dark: "hsl(var(--cream-dark))",
+        },
+        rose: {
+          DEFAULT: "hsl(var(--rose))",
+          light: "hsl(var(--rose-light))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -87,7 +99,7 @@ export default {
           to: { height: "0" },
         },
         "fade-up": {
-          from: { opacity: "0", transform: "translateY(30px)" },
+          from: { opacity: "0", transform: "translateY(40px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "fade-in": {
@@ -95,8 +107,18 @@ export default {
           to: { opacity: "1" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "50%": { transform: "translateY(-20px) rotate(2deg)" },
+        },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "0.5", transform: "scale(1)" },
+          "50%": { opacity: "0.8", transform: "scale(1.05)" },
+        },
+        "heart-beat": {
+          "0%, 100%": { transform: "scale(1)" },
+          "15%": { transform: "scale(1.15)" },
+          "30%": { transform: "scale(1)" },
+          "45%": { transform: "scale(1.1)" },
         },
       },
       animation: {
@@ -105,6 +127,8 @@ export default {
         "fade-up": "fade-up 0.8s ease-out forwards",
         "fade-in": "fade-in 0.6s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
+        "pulse-soft": "pulse-soft 3s ease-in-out infinite",
+        "heart-beat": "heart-beat 1.5s ease-in-out infinite",
       },
     },
   },

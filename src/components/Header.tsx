@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import logoMomentum from "@/assets/logo-momentum.jpg";
 
 const Header = () => {
   return (
@@ -7,15 +8,20 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50"
+      className="fixed top-0 left-0 right-0 z-50 glass"
     >
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="font-serif text-2xl font-medium text-foreground tracking-tight">
-            Momentum
+      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <img 
+            src={logoMomentum} 
+            alt="Momentum" 
+            className="h-10 w-10 rounded-lg object-cover"
+          />
+          <span className="font-serif text-xl font-semibold text-primary tracking-wide">
+            MOMENTUM
           </span>
         </div>
-        <Button variant="elegant" size="sm">
+        <Button variant="hero" size="default">
           Comprar Ahora
         </Button>
       </div>
