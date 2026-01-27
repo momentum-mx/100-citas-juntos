@@ -103,7 +103,7 @@ const CTA = () => {
                     </li>)}
                 </ul>
                 
-                <Button variant="soft" size="xl" className="w-full bg-gold hover:bg-gold-light text-accent-foreground font-semibold shadow-gold">
+                <Button variant="soft" size="xl" className="w-full bg-gold hover:bg-gold-light text-accent-foreground font-semibold shadow-gold" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")}>
                   <Heart className="w-5 h-5" />
                   Ordenar Ahora
                 </Button>

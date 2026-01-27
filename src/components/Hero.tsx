@@ -55,11 +55,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")}>
                 <Heart className="w-5 h-5 group-hover:animate-heart-beat" />
-                Ordenar Ahora — $49
+                Ordenar Ahora — $399
               </Button>
-              <Button variant="elegant" size="xl">
+              <Button variant="elegant" size="xl" onClick={() => {document.getElementById("Testimonial")?.scrollIntoView({ behavior: "smooth" });}}>
                 Ver Experiencias
               </Button>
             </div>

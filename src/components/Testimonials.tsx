@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 gradient-romantic relative overflow-hidden">
+    <section id="Testimonial" className="py-24 gradient-romantic relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-40 h-40 border border-gold/20 rounded-full" />

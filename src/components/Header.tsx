@@ -21,7 +21,7 @@ const Header = () => {
             MOMENTUM
           </span>
         </div>
-        <Button variant="hero" size="default">
+        <Button variant="hero" size="default" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")}>
           Comprar Ahora
         </Button>
       </div>
