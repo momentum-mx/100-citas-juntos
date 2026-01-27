@@ -52,7 +52,7 @@ const HowItWorks = () => {
             rotate: 3
           }} transition={{
             duration: 0.3
-          }} src="/lovable-uploads/68268b3f-c85b-485f-920d-2033457def89.png" />
+          }} src="./src/assets/product-100-citas-sbg.png" />
           </motion.div>
 
           {/* Content */}

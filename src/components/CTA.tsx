@@ -71,7 +71,7 @@ const CTA = () => {
             }} transition={{
               duration: 0.3
             }}>
-                <img alt="100 Citas Juntos" className="w-56 md:w-72 drop-shadow-2xl" src="/lovable-uploads/cf93c354-d1ab-4dc8-bb3f-110707da8a79.png" />
+                <img alt="100 Citas Juntos" className="w-56 md:w-72 drop-shadow-2xl" src="./src/assets/product-100-citas-sbg.png" />
               </motion.div>
               
               {/* Content */}

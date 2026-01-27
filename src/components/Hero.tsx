@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Heart, Sparkles } from "lucide-react";
 import FloatingHearts from "./FloatingHearts";
-import product100Citas from "@/assets/product-100-citas.png";
+
 const Hero = () => {
   return <section className="relative min-h-screen gradient-hero flex items-center pt-20 overflow-hidden">
       {/* Background decorative elements */}
@@ -41,7 +41,7 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="heading-display text-foreground mb-6">
-              <span className="block">1000 Citas</span>
+              <span className="block">100 Citas</span>
               <span className="text-elegant text-gold block mt-2">Juntos</span>
             </h1>
             
@@ -114,7 +114,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut"
           }} className="relative z-10">
-              <img alt="100 Citas Juntos - Libro de experiencias románticas" className="w-72 md:w-96 drop-shadow-2xl" src="/lovable-uploads/2e8676de-7c8e-479e-ae79-a4055a375f70.png" />
+              <img alt="100 Citas Juntos - Libro de experiencias románticas" className="w-72 md:w-96 drop-shadow-2xl" src="./src/assets/product-100-citas-sbg.png" />
               
               {/* Floating badges */}
               <motion.div initial={{
