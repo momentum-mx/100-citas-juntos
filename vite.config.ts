@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base:'https://edgar-mendoza.github.io/100-citas-together/',
+  base: mode === "production" ? "/100-citas-juntos/" : "/",
   server: {
     host: "::",
     port: 8080,
