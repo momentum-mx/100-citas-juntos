@@ -17,7 +17,7 @@ const Header = () => {
             alt="Momentum" 
             className="h-10 w-10 rounded-lg object-cover"
           />
-          <span className="font-noir text-xl font-medium text-primary tracking-wide leading-none relative top-[5px]">
+          <span className="font-noir text-xl font-semibold text-primary tracking-wide leading-none ">
             MOMENTUM
           </span>
         </div>

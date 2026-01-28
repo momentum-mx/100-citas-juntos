@@ -42,7 +42,7 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="heading-display text-foreground mb-6">
-              <span className="block relative top-[18px]">100 Citas Juntos</span>
+              <span className="block">100 Citas Juntos</span>
               {/* <span className="text-elegant text-gold block mt-2">Juntos</span> */}
             </h1>
             
