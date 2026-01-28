@@ -38,12 +38,12 @@ const Hero = () => {
             delay: 0.4
           }} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary mb-6">
               <Sparkles className="w-4 h-4 text-gold" />
-              <span className="text-sm font-medium text-primary">Por Momentum</span>
+              <span className="text-sm font-medium text-primary">Momentum Presenta</span>
             </motion.div>
             
             <h1 className="heading-display text-foreground mb-6">
-              <span className="block">100 Citas</span>
-              <span className="text-elegant text-gold block mt-2">Juntos</span>
+              <span className="block relative top-[18px]">100 Citas Juntos</span>
+              {/* <span className="text-elegant text-gold block mt-2">Juntos</span> */}
             </h1>
             
             <div className="decorative-line w-24 mx-auto lg:mx-0 mb-6" />
@@ -64,7 +64,7 @@ const Hero = () => {
               </Button>
             </div>
 
-            <motion.div initial={{
+            {/* <motion.div initial={{
             opacity: 0
           }} animate={{
             opacity: 1
@@ -81,7 +81,7 @@ const Hero = () => {
                 <p className="text-sm font-semibold text-foreground">+2,500 parejas</p>
                 <p className="text-xs text-muted-foreground">creando recuerdos juntos</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Product Image */}
@@ -128,7 +128,7 @@ const Hero = () => {
               duration: 0.5,
               delay: 1.2
             }} className="absolute -right-4 top-1/4 bg-gold text-accent-foreground px-4 py-2 rounded-full shadow-gold text-sm font-semibold">
-                ¡Bestseller!
+                ¡Compralo!
               </motion.div>
               
               <motion.div initial={{

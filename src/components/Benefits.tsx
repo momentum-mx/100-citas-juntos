@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Heart,
     title: "Conexión Profunda",
-    description: "Cada cita está diseñada para fortalecer el vínculo emocional entre ustedes.",
+    description: "Cada cita está diseñada para fortalecer el vínculo emocional.",
     color: "from-rose to-rose-light",
   },
   {
@@ -60,7 +60,7 @@ const Benefits = () => {
           <div className="decorative-line w-32 mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-5">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.title}

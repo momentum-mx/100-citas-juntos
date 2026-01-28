@@ -4,6 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Noir';
+  src: url('/src/assets/fonts/Noir_regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noir';
+  src: url('/src/assets/fonts/Noir_medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     /* Brand colors based on Momentum's burgundy */
@@ -58,6 +74,7 @@
     /* Typography */
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
+    --font-noir: 'Noir', 'system-ui', 'sans-serif';
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(345 70% 28% / 0.1);
@@ -140,8 +157,8 @@
 
 @layer components {
   .heading-display {
-    font-family: var(--font-serif);
-    @apply text-4xl md:text-5xl lg:text-7xl font-semibold tracking-tight leading-[1.1];
+    font-family: var(--font-noir);
+    @apply text-4xl md:text-5xl lg:text-7xl font-semibold tracking-wide leading-[1.1];
   }
 
   .heading-section {
@@ -152,6 +169,11 @@
   .heading-card {
     font-family: var(--font-serif);
     @apply text-xl md:text-2xl font-medium;
+  }
+
+  .text-num {
+    font-family: var(--font-serif);
+    @apply text-5xl md:text-5xl lg:text-7xl font-semibold tracking-tight leading-[1.1];
   }
 
   .text-elegant {

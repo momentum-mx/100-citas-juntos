@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import logoMomentum from "@/assets/logo-momentum.jpg";
+import logoMomentum from "@/assets/Momentum.jpg";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
             alt="Momentum" 
             className="h-10 w-10 rounded-lg object-cover"
           />
-          <span className="font-serif text-xl font-semibold text-primary tracking-wide">
+          <span className="font-noir text-xl font-medium text-primary tracking-wide leading-none relative top-[5px]">
             MOMENTUM
           </span>
         </div>

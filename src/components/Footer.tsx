@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import logoMomentum from "@/assets/logo-momentum.jpg";
+import logoMomentum from "@/assets/Momentum-blanco.png";
 
 const Footer = () => {
   return (
@@ -10,13 +10,13 @@ const Footer = () => {
             <img 
               src={logoMomentum} 
               alt="Momentum" 
-              className="h-12 w-12 rounded-lg object-cover"
+              className="h-24 w-24 rounded-lg object-cover"
             />
             <div>
-              <span className="font-serif text-xl font-semibold tracking-wide block">
+              <span className="font-noir text-xl font-medium tracking-wide block relative top-[8px]">
                 MOMENTUM
               </span>
-              <span className="text-xs text-primary-foreground/60">
+              <span className="text-xs text-primary-foreground/60 relative bottom-[2px] right-[1px]">
                 Sé víctima de tu éxito
               </span>
             </div>

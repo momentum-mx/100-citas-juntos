@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BookOpen, Users, Heart } from "lucide-react";
+import { Lightbulb, BookOpen, Users, Heart } from "lucide-react";
 import libroCitas from "@/assets/product-100-citas-sbg.png"; 
 
 const steps = [{
@@ -21,7 +21,7 @@ const steps = [{
 const HowItWorks = () => {
   return <section className="py-24 bg-background relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      {/* <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" /> */}
       
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -69,7 +69,8 @@ const HowItWorks = () => {
           once: true
         }}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm font-medium text-primary mb-6">
-              Cómo Funciona
+            <Lightbulb className="w-4 h-4 text-gold fill-gold" />
+              ¿Cómo Funciona?
             </span>
             <h2 className="heading-section text-foreground mb-4">
               Tres pasos hacia{" "}
