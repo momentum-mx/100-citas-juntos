@@ -17,7 +17,7 @@ const Footer = () => {
                 MOMENTUM
               </span>
               <span className="text-xs text-primary-foreground/60">
-                Para parejas que eligen amarse
+                Sé víctima de tu éxito
               </span>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
 
         <div className="mt-10 pt-8 border-t border-primary-foreground/10 text-center">
           <p className="text-xs text-primary-foreground/50">
-            © 2024 Momentum. Todos los derechos reservados.
+            © 2026 Momentum. Todos los derechos reservados.
           </p>
         </div>
       </div>

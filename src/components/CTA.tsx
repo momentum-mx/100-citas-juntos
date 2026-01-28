@@ -83,13 +83,13 @@ const CTA = () => {
                   </p>
                   <div className="flex items-baseline gap-3 justify-center md:justify-start">
                     <span className="text-5xl md:text-6xl font-serif font-bold text-gold">
-                      $49
+                      $399
                     </span>
                     <span className="text-xl text-primary-foreground/50 line-through">
-                      $79
+                      $499
                     </span>
                     <span className="px-3 py-1 bg-gold text-accent-foreground text-xs font-bold rounded-full">
-                      -38%
+                      -20%
                     </span>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const CTA = () => {
       }} className="mt-12 text-center">
           <p className="text-sm text-muted-foreground mb-4">
             ¿Tienes preguntas?{" "}
-            <a href="mailto:hola@momentum.com" className="text-primary font-medium hover:underline">
+            <a href="mailto:momentumlmexico@gmail.com" className="text-primary font-medium hover:underline">
               Escríbenos
             </a>
           </p>
