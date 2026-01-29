@@ -49,11 +49,11 @@ const Hero = () => {
             <div className="decorative-line w-24 mx-auto lg:mx-0 mb-6" />
             
             <p className="text-body text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
-            Redescubran el amor a través de 100 experiencias diseñadas para crear momentos que se viven hoy y se recuerdan siempre. Cada página es un impulso para conectar más profundo y avanzar juntos.
+            Redescubran el amor a través de 100 experiencias diseñadas para crear momentos que se recuerdan siempre. Cada página es un impulso para conectar y avanzar juntos.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")}>
+              <Button variant="hero" size="xl" className="group" onClick={() => window.open("https://buy.stripe.com/test_3cIeVdbaO2MSgIY2bQ6Zy00", "_blank")}>
                 <Heart className="w-5 h-5 group-hover:animate-heart-beat" />
                 Ordenar Ahora — $399
               </Button>
