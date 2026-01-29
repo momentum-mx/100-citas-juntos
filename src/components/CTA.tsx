@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { Check, Heart, ShieldCheck, Truck, Gift } from "lucide-react";
+import { LandPlot, Check, Heart, ShieldCheck, Truck, Gift } from "lucide-react";
 import libroCitas from "@/assets/product-100-citas-sbg.png";
 
 const includes = [{
@@ -11,10 +11,7 @@ const includes = [{
   text: "Diseño premium con espiral"
 }, {
   icon: Truck,
-  text: "Envío gratis a toda LATAM"
-}, {
-  icon: ShieldCheck,
-  text: "Garantía de satisfacción 30 días"
+  text: "Envío gratis a todo México"
 }];
 const CTA = () => {
   return <section className="py-24 bg-background relative overflow-hidden">
@@ -38,7 +35,7 @@ const CTA = () => {
             Comienza Hoy
           </span>
           <h2 className="heading-section text-foreground mb-4">
-            Tu historia de amor merece{" "}
+            Su historia de amor merece{" "}
             <span className="text-gold">100 capítulos más</span>
           </h2>
           <div className="decorative-line w-32 mx-auto mb-6" />
@@ -142,9 +139,27 @@ const CTA = () => {
               <Truck className="w-5 h-5 text-gold" />
               <span className="text-sm">Envío Gratis</span>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Heart className="w-5 h-5 text-gold" />
               <span className="text-sm">Hecho con Amor</span>
+            </div> */}
+          </div>
+          <div className="decorative-line w-32 mx-auto mb-6 relative top-[25px]" />
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm font-medium text-primary relative top-[25px]">
+            <LandPlot className="w-4 h-4 text-gold" />
+            Cada momento tiene un propósito
+          </span>
+          <div className="flex justify-center items-center gap-6 text-muted-foreground ">
+            <div className="flex items-center gap-2 relative top-[50px]">
+              <span className="text-sm">
+              Cada experiencia en este libro está pensada para llevar la relación un paso más allá. No se trata de actividades comunes, sino de crear una conexión real y compartida.
+              </span>
+            </div>
+          </div>
+          <div className="flex justify-center items-center gap-6 text-muted-foreground ">
+            <div className="flex items-center gap-2 relative top-[75px]">
+              <span className="text-sm">
+              Momentum nace con la intención de acompañarlos en ese camino. Nos honra ser parte de los momentos que hoy se viven y mañana se recuerdan.              </span>
             </div>
           </div>
         </motion.div>

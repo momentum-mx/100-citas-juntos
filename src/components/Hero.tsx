@@ -49,9 +49,7 @@ const Hero = () => {
             <div className="decorative-line w-24 mx-auto lg:mx-0 mb-6" />
             
             <p className="text-body text-muted-foreground mb-8 max-w-md mx-auto lg:mx-0">
-              Redescubre el amor con 100 experiencias únicas diseñadas para crear 
-              momentos inolvidables. Cada página es una invitación a conectar más 
-              profundamente con tu pareja.
+            Redescubran el amor a través de 100 experiencias diseñadas para crear momentos que se viven hoy y se recuerdan siempre. Cada página es un impulso para conectar más profundo y avanzar juntos.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

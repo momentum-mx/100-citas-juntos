@@ -4,20 +4,20 @@ import { Heart, Sparkles, Calendar, Gift, Star, Flame } from "lucide-react";
 const benefits = [
   {
     icon: Heart,
-    title: "Conexión Profunda",
-    description: "Cada cita está diseñada para fortalecer el vínculo emocional.",
+    title: "Conexión Real",
+    description: "Cada cita fortalece el vínculo y la comunicación.",
     color: "from-rose to-rose-light",
   },
   {
     icon: Sparkles,
     title: "Experiencias Únicas",
-    description: "Desde aventuras al aire libre hasta noches íntimas en casa.",
+    description: "Momentos simples que rompen la rutina.",
     color: "from-gold to-gold-light",
   },
   {
     icon: Calendar,
-    title: "Todo un Año",
-    description: "100 ideas significa que nunca se quedarán sin planes especiales.",
+    title: "Un año de momentos",
+    description: "100 ideas para no quedarse sin planes.",
     color: "from-primary to-burgundy-light",
   },
   {

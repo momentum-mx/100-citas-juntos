@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Mail, Facebook, Heart, Instagram } from "lucide-react";
 import logoMomentum from "@/assets/Momentum-blanco.png";
 
 const Footer = () => {
@@ -23,7 +23,15 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-8 text-sm">
-            <a href="#" className="hover:text-gold transition-colors">
+            <span></span>
+            <Facebook className="w-4 h-4 text-white" onClick={() => window.open("https://www.facebook.com/momemtumlmx", "_blank")} />
+            <span></span>
+            <Instagram className="w-4 h-4 text-white" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")} />
+            <span></span>
+            <Mail className="w-4 h-4 text-white" onClick={() => window.open("mailto:momentumlmexico@gmail.com", "_blank")} />
+            <span></span>
+
+            {/* <a href="#" className="hover:text-gold transition-colors">
               Términos
             </a>
             <a href="#" className="hover:text-gold transition-colors">
@@ -34,7 +42,7 @@ const Footer = () => {
             </a>
             <a href="#" className="hover:text-gold transition-colors">
               FAQ
-            </a>
+            </a> */}
           </div>
 
           <div className="flex items-center gap-2 text-sm text-primary-foreground/80">

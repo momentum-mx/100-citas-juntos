@@ -1,22 +1,27 @@
 import { motion } from "framer-motion";
-import { Lightbulb, BookOpen, Users, Heart } from "lucide-react";
+import { LockKeyhole, Lightbulb, BookOpen, Users, Heart } from "lucide-react";
 import libroCitas from "@/assets/product-100-citas-sbg.png"; 
 
 const steps = [{
   number: "01",
   icon: BookOpen,
-  title: "Elige una Página",
-  description: "Cada semana, seleccionen juntos una cita al azar o elijan según su humor."
+  title: "Elijan el Momento",
+  description: "Seleccionen juntos una cita al azar o según su estado de ánimo."
 }, {
   number: "02",
   icon: Users,
-  title: "Planifiquen Juntos",
-  description: "Cada cita incluye sugerencias para hacer la experiencia aún más especial."
+  title: "Vivan la Experiencia",
+  description: "Compartan sus ideas y sentimientos, sin complicaciones."
 }, {
   number: "03",
   icon: Heart,
-  title: "Vivan el Momento",
-  description: "Desconéctense del mundo y conéctense entre ustedes."
+  title: "Conecten de Verdad",
+  description: "Desconéctense del mundo a su alrededor y enfóquense en ustedes."
+}, {
+  number: "04",
+  icon: LockKeyhole,
+  title: "Guárdenlo como recuerdo",
+  description: "Anoten, recuerden y revivan juntos cada momento."
 }];
 const HowItWorks = () => {
   return <section className="py-24 bg-background relative overflow-hidden">
@@ -73,8 +78,8 @@ const HowItWorks = () => {
               ¿Cómo Funciona?
             </span>
             <h2 className="heading-section text-foreground mb-4">
-              Tres pasos hacia{" "}
-              <span className="text-gold">momentos mágicos</span>
+              Cuatro pasos hacia{" "}
+              <span className="text-gold">un mismo camino</span>
             </h2>
             <div className="decorative-line w-24 mb-10" />
 

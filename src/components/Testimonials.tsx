@@ -6,19 +6,19 @@ const testimonials = [
   {
     quote: "Después de 8 años juntos, pensamos que lo habíamos hecho todo. Este libro nos demostró lo contrario.",
     author: "María & Carlos",
-    location: "Ciudad de México",
+    location: "Puebla",
     avatar: "M",
   },
   {
     quote: "El regalo de aniversario perfecto. Cada cita es una oportunidad de enamorarnos de nuevo.",
     author: "Ana & Roberto",
-    location: "Buenos Aires",
+    location: "Ciudad de México",
     avatar: "A",
   },
   {
     quote: "Simple, elegante y efectivo. Nuestras tardes de domingo nunca volverán a ser aburridas.",
     author: "Laura & Diego",
-    location: "Madrid",
+    location: "Morelia",
     avatar: "L",
   },
 ];
