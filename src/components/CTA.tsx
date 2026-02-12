@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { LandPlot, Check, Heart, ShieldCheck, Truck, Gift } from "lucide-react";
 import libroCitas from "@/assets/product-100-citas-sbg.png";
+import { handleCheckout } from "@/utils/checkout";
 
 const includes = [{
   icon: Heart,
@@ -80,13 +81,13 @@ const CTA = () => {
                   </p>
                   <div className="flex items-baseline gap-3 justify-center md:justify-start">
                     <span className="text-5xl md:text-6xl font-serif font-bold text-gold">
-                      $399
+                      $429
                     </span>
                     <span className="text-xl text-primary-foreground/50 line-through">
                       $499
                     </span>
                     <span className="px-3 py-1 bg-gold text-accent-foreground text-xs font-bold rounded-full">
-                      -20%
+                      -14%
                     </span>
                   </div>
                 </div>
@@ -100,7 +101,7 @@ const CTA = () => {
                     </li>)}
                 </ul>
                 
-                <Button variant="soft" size="xl" className="w-full bg-gold hover:bg-gold-light text-accent-foreground font-semibold shadow-gold" onClick={() => window.open("https://buy.stripe.com/test_3cIeVdbaO2MSgIY2bQ6Zy00", "_blank")}>
+                <Button variant="soft" size="xl" className="w-full bg-gold hover:bg-gold-light text-accent-foreground font-semibold shadow-gold" onClick={() => handleCheckout('CTA')}>
                   <Heart className="w-5 h-5" />
                   Ordenar Ahora
                 </Button>

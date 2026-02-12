@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import logoMomentum from "@/assets/Momentum.jpg";
+import { handleCheckout } from "@/utils/checkout";
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
             MOMENTUM
           </span>
         </div>
-        <Button variant="hero" size="default" onClick={() => window.open("https://buy.stripe.com/test_3cIeVdbaO2MSgIY2bQ6Zy00", "_blank")}>
+        <Button variant="hero" size="default" onClick={() => handleCheckout('header')}>
           Comprar Ahora
         </Button>
       </div>

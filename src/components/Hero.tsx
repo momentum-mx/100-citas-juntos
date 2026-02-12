@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Heart, Sparkles } from "lucide-react";
 import FloatingHearts from "./FloatingHearts";
 import libroCitas from "@/assets/product-100-citas-sbg.png";
+import { handleCheckout } from "@/utils/checkout";
 
 const Hero = () => {
   return <section className="relative min-h-screen gradient-hero flex items-center pt-20 overflow-hidden">
@@ -53,9 +54,9 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group" onClick={() => window.open("https://buy.stripe.com/test_3cIeVdbaO2MSgIY2bQ6Zy00", "_blank")}>
+              <Button variant="hero" size="xl" className="group" onClick={() => handleCheckout('hero')}>
                 <Heart className="w-5 h-5 group-hover:animate-heart-beat" />
-                Ordenar Ahora — $399
+                Ordenar Ahora — $429
               </Button>
               <Button variant="elegant" size="xl" onClick={() => {document.getElementById("Testimonial")?.scrollIntoView({ behavior: "smooth" });}}>
                 Ver Experiencias
@@ -126,7 +127,7 @@ const Hero = () => {
               duration: 0.5,
               delay: 1.2
             }} className="absolute -right-4 top-1/4 bg-gold text-accent-foreground px-4 py-2 rounded-full shadow-gold text-sm font-semibold">
-                ¡Compralo!
+                ¡Adquierelo ya!
               </motion.div>
               
               <motion.div initial={{

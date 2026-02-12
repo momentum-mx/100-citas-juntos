@@ -27,7 +27,7 @@ const Footer = () => {
             <span></span>
             <Instagram className="w-4 h-4 text-white" onClick={() => window.open("https://www.instagram.com/momentumexico/", "_blank")} />
             <span></span>
-            <SendHorizonal className="w-4 h-4 text-white" onClick={() => window.open("mailto:momentumlmexico@gmail.com", "_blank")} />
+            <SendHorizonal className="w-4 h-4 text-white" onClick={() => window.open("https://wa.me/5215653795229", "_blank")} />
             <span></span>
             <Mail className="w-4 h-4 text-white" onClick={() => window.open("mailto:momentumlmexico@gmail.com", "_blank")} />
             <span></span>

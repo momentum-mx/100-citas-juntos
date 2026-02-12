@@ -1,6 +1,11 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { LockKeyhole, Lightbulb, BookOpen, Users, Heart } from "lucide-react";
-import libroCitas from "@/assets/product-100-citas-sbg.png"; 
+import libroCitas1 from "@/assets/product-100-citas-sbg-1.png"; 
+import libroCitas2 from "@/assets/product-100-citas-sbg-2.png"; 
+import libroCitas3 from "@/assets/product-100-citas-sbg-3.png"; 
+import libroCitas4 from "@/assets/product-100-citas-sbg-4.png"; 
+import libroCitas5 from "@/assets/product-100-citas-sbg-5.png"; 
 
 const steps = [{
   number: "01",
@@ -24,6 +29,24 @@ const steps = [{
   description: "Anoten, recuerden y revivan juntos cada momento."
 }];
 const HowItWorks = () => {
+  const images = [
+    libroCitas1,
+    libroCitas2, // aquí luego puedes poner más imágenes reales
+    libroCitas3,
+    libroCitas4,
+    libroCitas5
+  ];
+
+  const [current, setCurrent] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return <section className="py-24 bg-background relative overflow-hidden">
       {/* Decorative elements */}
       {/* <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" /> */}
@@ -53,12 +76,41 @@ const HowItWorks = () => {
             <div className="absolute top-10 right-10 w-20 h-20 border-2 border-gold/30 rounded-full" />
             <div className="absolute bottom-10 left-10 w-32 h-32 border border-rose/20 rounded-full" />
             
-            <motion.img alt="Libro 100 Citas Juntos" className="relative w-64 md:w-80 drop-shadow-2xl" whileHover={{
+            <div className="flex justify-center gap-2 mt-4" style={{ zIndex: 50 }}>
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    current === index
+                      ? "bg-gold w-6"
+                      : "bg-muted-foreground/30 w-2 hover:bg-muted-foreground/50"
+                  }`}
+                />
+              ))}
+            </div>
+            <div className="h-[400px] object-contain">
+              {images.map((img, index) => (
+                <motion.div
+                  key={index}
+                  className="absolute inset-0 flex items-center justify-center"
+                  animate={{ opacity: current === index ? 1 : 0 }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <img
+                    src={img}
+                    alt="Libro 100 Citas Juntos"
+                    className="h-full object-contain drop-shadow-2xl"
+                  />
+                </motion.div>
+              ))}
+            </div>
+            {/* <motion.img alt="Libro 100 Citas Juntos" className="relative w-64 md:w-80 drop-shadow-2xl" whileHover={{
             scale: 1.05,
             rotate: 3
           }} transition={{
             duration: 0.3
-          }} src={libroCitas} />
+          }} src={libroCitas} /> */}
           </motion.div>
 
           {/* Content */}
